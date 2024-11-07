@@ -11,4 +11,12 @@ package br.com.DTO;
  */
 public class ManutencaoDTO {
     
+    private int manutencoes;
+    
+    public int getManutencoes(){
+        return manutencoes;
+    }
+    public void setManutencoes(){
+        this.manutencoes = manutencoes;
+    }
 }

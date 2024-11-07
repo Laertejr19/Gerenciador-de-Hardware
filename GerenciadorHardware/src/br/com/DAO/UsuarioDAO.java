@@ -21,7 +21,7 @@ public class UsuarioDAO {
     public void limpar() {
         TelaUsuarios.txtNomeUsu.setText(null);
         TelaUsuarios.txtEmail.setText(null);
-        TelaUsuarios.txtNomeUsu.setText(null);
+        TelaUsuarios.txtUsuario.setText(null);
         TelaUsuarios.txtSenha.setText(null);
     }
 
