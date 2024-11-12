@@ -5,8 +5,12 @@
  */
 package br.com.VIEWS;
 
+import br.com.DAO.ConexaoDAO;
 import br.com.DAO.UsuarioDAO;
 import br.com.DTO.UsuarioDTO;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import javax.swing.JOptionPane;
 
 /**
@@ -14,12 +18,51 @@ import javax.swing.JOptionPane;
  * @author W10
  */
 public class TelaLogin extends javax.swing.JFrame {
+    
+     Connection conexao = null;
+    PreparedStatement pst = null;
+    ResultSet rs = null;
+    
+ public void logar() {
+        String sql = "select * from usuario where nome = ? and senha = ?";
+
+        conexao = ConexaoDAO.connector();
+
+        try {
+
+            pst = conexao.prepareStatement(sql);
+
+            pst.setString(1, txtNomeLogin.getText());
+            pst.setString(2, txtSenhaLogin.getText());
+
+            rs = pst.executeQuery();
+
+            if (rs.next()) {
+                
+                TelaPrincipal pri = new TelaPrincipal();
+                pri.setVisible(true);
+                this.dispose();
+         
+             
+            } else {
+                JOptionPane.showMessageDialog(null, "nome de usuario e/ ou senha invalidas");
+                
+            }
+
+        } catch (Exception e) {
+
+            JOptionPane.showMessageDialog(null, e.getMessage());
+           
+        }
+
+    }
 
     /**
      * Creates new form TelaLogin
      */
     public TelaLogin() {
         initComponents();
+        
     }
 
     /**
@@ -34,7 +77,7 @@ public class TelaLogin extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
+        btnLogar = new javax.swing.JButton();
         txtNomeLogin = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -75,11 +118,11 @@ public class TelaLogin extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton1.setText("Logar");
-        jButton1.setToolTipText("Logar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnLogar.setText("Logar");
+        btnLogar.setToolTipText("Logar");
+        btnLogar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnLogarActionPerformed(evt);
             }
         });
 
@@ -92,64 +135,48 @@ public class TelaLogin extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txtNomeLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtSenhaLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 85, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(60, 60, 60)
+                        .addComponent(jLabel2)))
+                .addGap(23, 23, 23)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(txtSenhaLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtNomeLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 62, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton1)
+                .addComponent(btnLogar)
                 .addGap(125, 125, 125))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(99, 99, 99)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGap(97, 97, 97)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(txtNomeLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(43, 43, 43)
+                .addGap(45, 45, 45)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(txtSenhaLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(48, 48, 48)
-                .addComponent(jButton1)
+                .addComponent(btnLogar)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-         UsuarioDTO dto = new UsuarioDTO();     
-       UsuarioDAO dao = new UsuarioDAO();
+    private void btnLogarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogarActionPerformed
+         
+    logar();
        
-       if(txtNomeLogin.getText().isEmpty()){
            
-           JOptionPane.showMessageDialog(null, "É obrigatorio nome de usuario");
-           
-       }else if(txtSenhaLogin.getText().isEmpty()){
-           
-          JOptionPane.showMessageDialog(null, "É obrigatorio senha");
-           
-       }else{
-           String nomeUsu= txtNomeLogin.getText();
-           String senhaUsu = txtSenhaLogin.getText();
-           
-           dto.setNomeUsuario(nomeUsu);
-           dto.setSenhaUsuario(senhaUsu);
-                   
-           int go = dao.logar(dto);
-           
-           if(go==1){
-               this.dispose();
-           }
-       }
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnLogarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -187,13 +214,13 @@ public class TelaLogin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btnLogar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JTextField txtNomeLogin;
-    private javax.swing.JTextField txtSenhaLogin;
+    public static javax.swing.JTextField txtNomeLogin;
+    public static javax.swing.JTextField txtSenhaLogin;
     // End of variables declaration//GEN-END:variables
 }

@@ -33,10 +33,10 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jMenu1.setText("Cadastro");
+        jMenu1.setText("Maquinas");
         jMenuBar1.add(jMenu1);
 
-        jMenu2.setText("Edit");
+        jMenu2.setText("Manutencoes");
         jMenuBar1.add(jMenu2);
 
         setJMenuBar(jMenuBar1);

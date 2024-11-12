@@ -157,47 +157,8 @@ public class CadastroMaquinas extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-       EquipamentoDAO dao = new EquipamentoDAO();
-       EquipamentoDTO dto = new EquipamentoDTO();
+  
        
-       if(txtNome.getText().isEmpty()){
-           JOptionPane.showMessageDialog(null, "É obrigatório registrar o nome.");
-       } else if (txtLab.getText().isEmpty()){
-         JOptionPane.showMessageDialog(null, "É obrigatório registrar o laboratório.");
-       } else if (txtProcess.getText().isEmpty()){
-            JOptionPane.showMessageDialog(null, "É obrigatório registrar o processador.");
-       } else if (txtRAM.getText().isEmpty()){
-            JOptionPane.showMessageDialog(null, "É obrigatório registrar a memória ram.");
-       } else if (txtArmazenamento.getText().isEmpty()){
-            JOptionPane.showMessageDialog(null, "É obrigatório registrar o armazenamento.");
-            } else if (txtData.getText().isEmpty()){
-            JOptionPane.showMessageDialog(null, "É obrigatório registrar a data.");
-            } else if (txtSerie.getText().isEmpty()){
-            JOptionPane.showMessageDialog(null, "É obrigatório registrar a serie.");
-            } else  {
-            String NomeMaquina = txtNome.getText();
-            String LaboratorioMaquina = txtLab.getText();
-            String ProcessadorMaquina = txtProcess.getText();
-            String RamMaquina = txtRAM.getText();
-             String ArmazenamentoMaquina = txtArmazenamento.getText();
-              String DataMaquina = txtData.getText();
-               String SerieMaquina = txtSerie.getText();
-               
-            dto.setNome(NomeMaquina);
-            dto.setLaboratorio(LaboratorioMaquina);
-            dto.setProcessador(ProcessadorMaquina);
-            dto.setRam(RamMaquina);
-            dto.setArmazenamento(ArmazenamentoMaquina);
-             dto.setData(DataMaquina);
-             dto.setSerie(SerieMaquina);
-              
-            int go = dao.criarELogar(dto);
-            
-            if(go==1){
-                this.dispose();
-                
-            }
-       }
     }//GEN-LAST:event_jButton1ActionPerformed
  
     // Variables declaration - do not modify//GEN-BEGIN:variables

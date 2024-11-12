@@ -10,9 +10,9 @@ public class ConexaoDAO {
 
         java.sql.Connection conexao = null;
         String driver = "com.mysql.jdbc.Driver";
-        String url = "jdbc:mysql://localhost:3306/GerenciadorHardware";
+        String url = "jdbc:mysql://localhost:3306/GerenciadoHardware";
         String user = "root";
-        String password = "";
+        String password = "root";
 
         try {
             Class.forName(driver);

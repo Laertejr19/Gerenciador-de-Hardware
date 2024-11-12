@@ -10,9 +10,10 @@ package br.com.DTO;
  * @author W10
  */
 public class LaboratorioDTO {
-     private int id;
+
+    private int id;
     private String nome_laboratorio;
-    
+
     public int getId() {
         return id;
     }
@@ -20,6 +21,7 @@ public class LaboratorioDTO {
     public void setId(int id) {
         this.id = id;
     }
+
     public String getNomeLab() {
         return nome_laboratorio;
     }

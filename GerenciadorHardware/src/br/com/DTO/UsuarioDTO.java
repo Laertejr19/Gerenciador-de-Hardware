@@ -10,46 +10,40 @@ package br.com.DTO;
  * @author W10
  */
 public class UsuarioDTO {
-    
     private int id;
-    private String nome, email, nome_usuario, senha;
-    
-    public int getIdUsuario() {
+    private String nome, senha, tipo_user;
+
+    public int getId() {
         return id;
     }
 
-    public void setIdUsuario(int id) {
+    public void setId(int id) {
         this.id = id;
     }
 
-    public String getEmailUsuario() {
-        return email;
-    }
-
-    public void setEmailUsuario(String email) {
-        this.email = email;
-    }
-
-    public String getNomeUsuario() {
-        return nome_usuario;
-    }
-
-    public void setNomeUsuario(String nome_usuario) {
-        this.nome_usuario = nome_usuario;
-    }
- public String getNomeUsuUsuario() {
+    public String getNome() {
         return nome;
     }
 
-    public void setNomeUsuUsuario(String nome_usuario) {
+    public void setNome(String nome) {
         this.nome = nome;
     }
-    public String getSenhaUsuario() {
+
+    public String getSenha() {
         return senha;
     }
 
-    public void setSenhaUsuario(String senha) {
+    public void setSenha(String senha) {
         this.senha = senha;
     }
+
+    public String getTipo_user() {
+        return tipo_user;
+    }
+
+    public void setTipo_user(String tipo_user) {
+        this.tipo_user = tipo_user;
+    }
+   
 }
 
