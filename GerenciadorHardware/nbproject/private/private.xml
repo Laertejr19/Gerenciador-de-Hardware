@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/aluno.saolucas/Documents/NetBeansProjects/Gerenciador-de-Hardware/GerenciadorHardware/src/br/com/DAO/ConexaoDAO.java</file>
+            <file>file:/C:/Users/aluno.saolucas/Documents/NetBeansProjects/Gerenciador-de-Hardware/GerenciadorHardware/src/br/com/DAO/UsuarioDAO.java</file>
+            <file>file:/C:/Users/aluno.saolucas/Documents/NetBeansProjects/Gerenciador-de-Hardware/GerenciadorHardware/src/br/com/VIEWS/CadastroMaquinas.java</file>
+            <file>file:/C:/Users/aluno.saolucas/Documents/NetBeansProjects/Gerenciador-de-Hardware/GerenciadorHardware/src/br/com/VIEWS/TelaPrincipal.java</file>
+            <file>file:/C:/Users/aluno.saolucas/Documents/NetBeansProjects/Gerenciador-de-Hardware/GerenciadorHardware/src/br/com/VIEWS/TelaLogin.java</file>
+            <file>file:/C:/Users/aluno.saolucas/Documents/NetBeansProjects/Gerenciador-de-Hardware/GerenciadorHardware/src/br/com/DAO/LaboratorioDAO.java</file>
+            <file>file:/C:/Users/aluno.saolucas/Documents/NetBeansProjects/Gerenciador-de-Hardware/GerenciadorHardware/src/br/com/DTO/LaboratorioDTO.java</file>
+            <file>file:/C:/Users/aluno.saolucas/Documents/NetBeansProjects/Gerenciador-de-Hardware/GerenciadorHardware/src/br/com/DAO/PecasDAO.java</file>
+            <file>file:/C:/Users/aluno.saolucas/Documents/NetBeansProjects/Gerenciador-de-Hardware/GerenciadorHardware/src/br/com/VIEWS/CadastroPecas.java</file>
+            <file>file:/C:/Users/aluno.saolucas/Documents/NetBeansProjects/Gerenciador-de-Hardware/GerenciadorHardware/src/br/com/VIEWS/TelaUsuarios.java</file>
+            <file>file:/C:/Users/aluno.saolucas/Documents/NetBeansProjects/Gerenciador-de-Hardware/GerenciadorHardware/src/br/com/DTO/ManutencaoDTO.java</file>
+            <file>file:/C:/Users/aluno.saolucas/Documents/NetBeansProjects/Gerenciador-de-Hardware/GerenciadorHardware/src/TelaTeste/CadastroMaquinas.java</file>
+            <file>file:/C:/Users/aluno.saolucas/Documents/NetBeansProjects/Gerenciador-de-Hardware/GerenciadorHardware/src/br/com/DAO/ManutencaoDAO.java</file>
+            <file>file:/C:/Users/aluno.saolucas/Documents/NetBeansProjects/Gerenciador-de-Hardware/GerenciadorHardware/src/br/com/DAO/EquipamentoDAO.java</file>
+            <file>file:/C:/Users/aluno.saolucas/Documents/NetBeansProjects/Gerenciador-de-Hardware/GerenciadorHardware/src/br/com/DTO/EquipamentoDTO.java</file>
+            <file>file:/C:/Users/aluno.saolucas/Documents/NetBeansProjects/Gerenciador-de-Hardware/GerenciadorHardware/src/br/com/DTO/PecasDTO.java</file>
+            <file>file:/C:/Users/aluno.saolucas/Documents/NetBeansProjects/Gerenciador-de-Hardware/GerenciadorHardware/src/br/com/DTO/UsuarioDTO.java</file>
+            <file>file:/C:/Users/aluno.saolucas/Documents/NetBeansProjects/Gerenciador-de-Hardware/GerenciadorHardware/src/br/com/VIEWS/TelaRegistroManutencoes.java</file>
+        </group>
+    </open-files>
+</project-private>
