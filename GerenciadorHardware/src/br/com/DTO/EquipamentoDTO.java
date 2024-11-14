@@ -7,15 +7,15 @@ package br.com.DTO;
 
 public class EquipamentoDTO {
 
-    private int id;
+    private int id_maq;
     private String nome_maquina, status, tipo; 
 
-    public int getId() {
-        return id;
+    public int getIdMaq() {
+        return id_maq;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdMaq(int id) {
+        this.id_maq = id_maq;
     }
 
     public String getNome_maquina() {

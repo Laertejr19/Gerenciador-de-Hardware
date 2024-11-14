@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package br.com.VIEWS;
 
 import br.com.DAO.ConexaoDAO;
@@ -13,10 +9,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author W10
- */
 public class TelaLogin extends javax.swing.JFrame {
     
      Connection conexao = null;

@@ -11,15 +11,15 @@ package br.com.DTO;
  */
 public class LaboratorioDTO {
 
-    private int id;
-    private String nome_laboratorio;
+    private int id_lab;
+    private String nome_laboratorio, status_laboratorio;
 
-    public int getId() {
-        return id;
+    public int getIdLab() {
+        return id_lab;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdLab(int id_lab) {
+        this.id_lab = id_lab;
     }
 
     public String getNomeLab() {
@@ -28,5 +28,11 @@ public class LaboratorioDTO {
 
     public void setNomeLab(String nome_laboratorio) {
         this.nome_laboratorio = nome_laboratorio;
+    }
+    public String getStatusLab(){
+        return nome_laboratorio;
+    }
+    public void setStatusLab(LaboratorioDTO dto){
+this.status_laboratorio = nome_laboratorio;
     }
 }
