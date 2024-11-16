@@ -11,23 +11,48 @@ Laerte Ferraz Da Silva Junior e Vinicius Costa Dias
 
 ### **1. Introdução**
 
+Este é um projeto criado em virtude do aprendizado sobre o funcionamento organizado de um ambiente tecnológico, organizando não somente materiais tecnológicos, mas também a forma que são aplicadas as manutenções, assim como a otimização do desempenho e custos, desempenhando um papel crucial na sustentabilidade e eficiência das infraestruturas tecnológicas.
+
 ### **1.1. Objetivo**
 
-O objetivo deste documento é detalhar os requisitos funcionais e não funcionais do sistema "Gerenciador de Hardware para Laboratórios", que permitirá o controle e monitoramento de máquinas, consertos, peças trocadas e inventário de componentes em um ou mais laboratórios.
+O Objetivo desse projeto é aprender mais sobre MySQL e java, através da criação de um sistema com o propósito de Gerenciar um sistema de hardware, através dos requisitos funcionais e não funcionais, como por exemplo, cadastro de usuarios, controle de máquinas, controle de consertos, manutenções, inventário de peças, equipamentos, gerenciamento de laboratórios e controle de acesso e usuários.   
 
 ### **1.2. Escopo**
 
-O sistema gerenciará:
+O sistema deve gerenciar: 
 
-- Cadastro e controle de máquinas de diversos laboratórios.
-- Registro de manutenções, consertos e peças trocadas.
+Cadastro de usuarios
+Controle de máquinas
+Controle de consertos
+Manutenções
+Inventário de peças
+Equipamentos
+Gerenciamento de laboratórios
+Controle de acesso e usuários
 
 ### **1.3. Definições, Acrônimos e Abreviações**
 
-- **Máquina**:
-- **Peça**:
-- - **Conserto**:
-- **Inventário**:
+Definições
+
+Requisitos Funcionais (RF): São as funcionalidades que o sistema ou projeto deve ter para atender às necessidades do usuário. Ex: "O sistema deve permitir o cadastro de equipamentos."
+Requisitos Não Funcionais (RNF): São as características do sistema relacionadas à sua qualidade, como desempenho, segurança e usabilidade. Ex: "O sistema deve ser capaz de processar até 50 usuários simultâneos."
+Escopo: O conjunto de atividades, funcionalidades e entregáveis que estão incluídos ou excluídos de um projeto. Define os limites do trabalho.
+Stakeholders: São as partes interessadas em um projeto, como clientes, usuários, patrocinadores ou membros da equipe.
+
+Acrônimos
+
+API (Application Programming Interface): Interface que permite que diferentes softwares se comuniquem entre si.
+CRM (Customer Relationship Management): Sistema para gerenciar o relacionamento com os clientes.
+ERP (Enterprise Resource Planning): Sistema de gestão empresarial que integra todas as funções da empresa, como finanças, logística e recursos humanos.
+UI (User Interface): Interface do usuário, o meio pelo qual o usuário interage com um sistema ou aplicativo.
+UX (User Experience): Experiência do usuário, que refere-se a como o usuário se sente ao interagir com um sistema ou produto.
+
+Abreviações
+
+HR (Hardware): Equipamento físico de um computador ou sistema.
+DB (Database): Banco de dados, onde as informações são armazenadas de maneira estruturada.
+OS (Operating System): Sistema operacional, que gerencia os recursos de hardware e software de um computador.
+IoT (Internet of Things): Internet das coisas, que se refere à interconexão de dispositivos e objetos físicos à internet.
 
 ---
 
@@ -99,3 +124,8 @@ O sistema gerenciará:
 ### **4.2. Relatórios**
 
 - **RI-03**: O sistema deve permitir a geração de relatórios em tempo real, com filtros de data, laboratório ou máquina específica.
+
+### **5. Considerações Finais**
+
+O sistema "Gerenciador de Hardware para Laboratórios" deve facilitar o controle e o monitoramento das máquinas e peças de hardware, proporcionando maior eficiência na gestão de manutenção e inventário dos laboratórios. Este documento deverá ser revisado periodicamente conforme novas funcionalidades e necessidades sejam identificadas.
+
