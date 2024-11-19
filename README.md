@@ -188,15 +188,24 @@ tipo VARCHAR(100)
 
 SELECT * FROM equipamentos;
 
--- CREATE TABLE manutencao ( 
+ CREATE TABLE manutencao ( 
 
--- id_manutencao INT AUTO_INCREMENT PRIMARY KEY, 
+ id_manutencao INT AUTO_INCREMENT PRIMARY KEY, 
 
--- id_equipamento INT, data_manutencao DATE NOT NULL,
+ id_equipamento INT, data_manutencao DATE NOT NULL,
 
--- diagnostico TEXT, solucao TEXT, tecnico_responsavel VARCHAR(100), 
+ diagnostico TEXT, solucao TEXT, tecnico_responsavel VARCHAR(100), 
  
--- FOREIGN KEY (id_equipamento) REFERENCES equipamento(id_equipamento) );
+ FOREIGN KEY (id_equipamento) REFERENCES equipamento(id_equipamento) );
 
--- SELECT * FROM manutencao;
+CREATE TABLE manutencao ( 
+
+id_laboratorio INT AUTO_INCREMENT PRIMARY KEY, 
+
+nome VARCHAR(100) NOT NULL 
+
+);
+ SELECT * FROM manutencao;
+
+
 ```
