@@ -143,7 +143,7 @@ O sistema permite a geração de relatórios em tempo real, com filtros de data,
 ### **5. Considerações Finais**
 
 O sistema "Gerenciador de Hardware para Laboratórios" deve facilitar o controle e o monitoramento das máquinas e peças de hardware, proporcionando maior eficiência na gestão de manutenção e inventário dos laboratórios. Este documento deverá ser revisado periodicamente conforme novas funcionalidades e necessidades sejam identificadas.
-```
+```bash
 Create database GerenciadoHardware;
 
 use GerenciadoHardware;
