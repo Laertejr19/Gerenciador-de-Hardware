@@ -143,4 +143,60 @@ O sistema permite a geração de relatórios em tempo real, com filtros de data,
 ### **5. Considerações Finais**
 
 O sistema "Gerenciador de Hardware para Laboratórios" deve facilitar o controle e o monitoramento das máquinas e peças de hardware, proporcionando maior eficiência na gestão de manutenção e inventário dos laboratórios. Este documento deverá ser revisado periodicamente conforme novas funcionalidades e necessidades sejam identificadas.
+```
+Create database GerenciadoHardware;
 
+use GerenciadoHardware;
+ 
+
+CREATE TABLE usuario ( 
+
+id_usuario INT AUTO_INCREMENT PRIMARY KEY, 
+nome VARCHAR(100) NOT NULL, 
+senha VARCHAR(100) NOT NULL, 
+tipo_user varchar(30)
+
+);
+
+SELECT * FROM usuario;
+
+describe usuario;
+
+
+
+CREATE TABLE laboratorios ( 
+
+id_laboratorio INT AUTO_INCREMENT PRIMARY KEY, 
+
+nome VARCHAR(100) NOT NULL 
+
+);
+
+SELECT * FROM laboratorios;
+
+CREATE TABLE equipamentos ( 
+
+id_equipamento INT AUTO_INCREMENT PRIMARY KEY, 
+ 
+nome_maquina VARCHAR(100) NOT NULL, 
+ 
+status VARCHAR(100) NOT NULL,
+ 
+tipo VARCHAR(100)  
+ 
+ );
+
+SELECT * FROM equipamentos;
+
+-- CREATE TABLE manutencao ( 
+
+-- id_manutencao INT AUTO_INCREMENT PRIMARY KEY, 
+
+-- id_equipamento INT, data_manutencao DATE NOT NULL,
+
+-- diagnostico TEXT, solucao TEXT, tecnico_responsavel VARCHAR(100), 
+ 
+-- FOREIGN KEY (id_equipamento) REFERENCES equipamento(id_equipamento) );
+
+-- SELECT * FROM manutencao;
+```
